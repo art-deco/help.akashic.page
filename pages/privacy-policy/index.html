@@ -1,0 +1,78 @@
+<critical-path-font text="Privacy Policy" family="Squada One">
+  h1 { font-family: 'Squada One' }
+</critical-path-font>
+
+# Privacy Policy
+
+_Akashic.Page_ is an online service that provides JavaScript widgets to be installed on websites to allow visitors to interact via comments, and subscribe to updates. The widgets include:
+
+<ul>
+  - the comments widget;
+  - the web-push notifications subscription button;
+  - the email collection widget.
+</ul>
+
+When necessary, visitors will need to log in using either a _LinkedIn_ or _GitHub_ account, so that _Akashic.Page_ can verify that they are real users, and not computer programs, known as "bots". This measure is implemented to improve the quality of content and increase security (e.g., to prevent abusing the service for such attacks as [subscription bombs](sub-bomb)).
+
+The widgets from _Akashic.Page_ do not use or set any 3rd party cookies, including from such services as _Google Analytics_. Your data is never sold or transferred to 3rd parties.
+
+<section-break />
+
+## Definitions
+
+<ul>
+  - We, us: _Akashic.Page_ marketing application created by *Art Deco Code*, a software development company in London (see the bottom of the page for contact information).
+  - Login provider: a social network or other service that allows to login using their account, such as _LinkedIn_ and _GitHub_.
+  - Visitors: those users that see JavaScript widget integrated on websites.
+  - You: the subject of this terms and conditions for processing of personal data.
+</ul>
+
+<section-break />
+
+## Comments
+
+To leave a comment, we use 2 login provides: _LinkedIn_ and _GitHub_. We acquire the most basic with the least possible permissions that are possible to set: <code>[r_liteprofile](lite-profile)</code> for _LinkedIn_ and <code>NO scope</code> for _GitHub_. When you decide to sign in to comment using the OAuth buttons, some cookies will be stored. They include 2 items: `koa:sess` and `koa:sign`. *koa:sess* is a base-64 encoded collection of information which was obtained when you signed in, and *koa:sign* is the key used to verify the integrity of this object on the server. The following data is recorded in the session cookie for the period of 1 year:
+
+<ul>
+  * ``linkedin_user``: id (MemberID unique to our app which cannot be used to deduct your public _LinkedIn_ profile by anyone including _Akashic.Page_), firstName, lastName, profilePicture.
+  * ``github_user``: login, name, avatar_url, html_url. These are public fields that can be obtained by visiting your profile anonymously.
+  * ``csrf``: the cross-site-request-forgery token that is required for security reasons to prevent man-in-the-middle attacks.
+  * ``github-code`` and ``code``: simple numerical values (like 556) used during the authentication flow with _GitHub_ and _LinkedIn_ to store a random code used to prevent man-in-the-middle attack. It is deleted once the authentication is complete.
+</ul>
+
+Your IP address is NOT recorded when you leave a comment.
+
+When you leave a comment, its text and the profile information from either or both of login providers is saved in the database. The data is held to facilitate exchange of opinions and will NOT be used for marketing/commercial communication purposes. When submitting the email form, you agree to let _Akashic.Page_ store your LinkedIn and GitHub profile information, that is limited to your name, profile picture, and link to the GitHub profile when applicable.
+
+To delete your comments in case you were signed in, authorise again either via _LinkedIn_ or _GitHub_, and click on the delete button. The record with all your stored profile personal data will be removed from the database, but might be kept in back-ups.
+
+<section-break />
+
+## Web-Push Button
+
+Web push is a new technology that allows visitors to subscribe to notifications via their browsers and devices. In this case, no personal data is used in the process, as completely anonymous endpoint address and user key, e.g., `https://fcm.googleapis.com/fcm/send/dMderPtz9q8:APA91bEUfHA-fcrVjdL...`, `BFNRHL5W9-L9eHSpLJjh2GTS01Yav_IV1KTGlf...`, are recorded to send messages to. The messages may include promotional information and lead to a URL upon click. No LinkedIn or GitHub information is stored.
+
+<section-break />
+
+## Emails Widget
+
+In case when visitors do not want to use anonymous web-push notification for any reason (e.g., if their browser does not allow that), they may sign up with their email address. To collect such address, the user must authenticate on _LinkedIn_ with ``r_liteprofile`` scope or on _GitHub_ with ``user:email`` scope to provide a valid e-mail address. We use this method to prevent unauthorised handling of email addresses and increase the quality of data. The email is recorded against either the LinkedIn Member ID (unique to our application, and without any profile data associated with it), or _GitHub_ login. No other personal data apart from `email` is stored.
+
+By agreeing with this Terms, you agree to let _Akashic.Page_ process your email address for marketing and informational communication, such as newsletters and notifications about website updates.
+
+When you visit a website you've been email subscribed to, the widget will show that such subscription exists, and the "Unsubscribe" button will show up. By pressing on the button, the record with your email address will be removed from the database, which means that no more of your personal data with the email address will be processed further on this website.
+
+<section-break />
+
+## Data Controller
+
+Your data is processed by:
+
+```
+  ART DECO CODE LIMITED,
+  Company number 11323401
+  International House, 24 Holborn Viaduct,
+  London, United Kingdom, EC1A 2BN
+```
+
+_Art Deco™_ is a small company and collects personal data only for marketing purposes, therefore it is [exempt from registering](ico-exemption) with ICO, however we strongly respect the GDPR framework. If you have any queries or questions regarding your personal data, to send a data subject request, or request removal of all your personal data, please forward your query to `privacy@artd.eco`.

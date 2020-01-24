@@ -2,13 +2,13 @@ import makeClassGetter from './__mcg'
 const renameMaps = {  }
 import { Component, render, h } from '@externs/preact'
 import { makeIo, init, start } from './__competent-lib'
-import Ellipsis from '../components/ellipsis.jsx'
 import GithubBadge from '../components/github-badge.jsx'
+import Highlightjs from 'splendid/build/components/highlightjs'
 import SocialButtons from 'splendid/build/components/social-buttons'
 
 const __components = {
-  'ellipsis': Ellipsis,
   'github-badge': GithubBadge,
+  'highlightjs': Highlightjs,
   'social-buttons': SocialButtons,
 }
 
@@ -25,20 +25,19 @@ const meta = [{
 },
 {
   key: 'social-buttons',
-  id: 'c14e9',
+  id: 'c9fa9',
   props: {
-    url: 'https://help.akshic.page/',
+    url: 'https://help.akshic.page/privacy-policy.html',
     meta: true,
     className: 'b-xq b-Hk',
   },
 },
 {
-  key: 'ellipsis',
-  id: 'ceb55',
+  key: 'highlightjs',
+  id: 'cb288',
   props: {
-    timeout: 300,
+    lang: 'undefined',
   },
-  children: ["\n  Please bear one moment while I add the content\n"],
 }]
 meta.forEach(({ key, id, props = {}, children = [] }) => {
   const Comp = __components[key]

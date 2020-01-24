@@ -15,7 +15,7 @@ const config = {
   // for sitemap and social-buttons
   url: 'https://help.akshic.page',
   // required when pages are at org.github.io/pages-name
-  /* mount: '/' */,
+  /* mount: '/' */
   potracePath: '~/.splendid/potrace',
 }
 
