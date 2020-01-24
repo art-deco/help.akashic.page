@@ -1,7 +1,7 @@
 {
-  "name": "my-new-package",
+  "name": "@artdeco/help.akashic.page",
   "version": "0.0.0",
-  "description": "{{ description }}",
+  "description": "Help For Akashic.Page.",
   "scripts": {
     "t": "zoroaster -a",
     "test": "yarn t test/spec test/mask",
@@ -15,17 +15,17 @@
   "files": [],
   "repository": {
     "type": "git",
-    "url": "{{ repo.git_url }}"
+    "url": "git://github.com/art-deco/help.akashic.page.git"
   },
   "keywords": [
     "{{ keywords }}"
   ],
-  "author": "{{ author_name }} <{{ author_email }}>",
-  "license": "{{ license_spdx }}",
+  "author": "Anton <anton@adc.sh>",
+  "license": "AGPL-3.0",
   "bugs": {
-    "url": "{{ repo.html_url }}/issues"
+    "url": "https://github.com/art-deco/help.akashic.page/issues"
   },
-  "homepage": "{{ URL }}",
+  "homepage": "https://help.akshic.page",
   "devDependencies": {
     "documentary": "^1.34.1",
     "splendid": "^1.16.4",
